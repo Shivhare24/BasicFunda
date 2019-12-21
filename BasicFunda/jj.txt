@@ -1,0 +1,49 @@
+import java.io.BufferedReader;
+import java.io.FileReader;
+
+public class VowelsAndConsonants {
+
+	public static void main(String[] args) {
+		BufferedReader reader = null;
+		try {
+			reader = new BufferedReader(new FileReader(
+					"C:\\Users\\shubham.shivhare\\eclipse-workspace\\BasicFunda\\input.txt"));
+			int count =0;
+			Integer testcase = Integer.parseUnsignedInt(reader.readLine());
+			Integer length = Integer.parseUnsignedInt(reader.readLine());
+			String read = reader.readLine();
+			for (int i = 0; i <testcase; i++) {
+				for (int j = 0; j <length-1;j++) {
+					if ((isConsonant(read.charAt(j)))&&(isVowel(read.charAt(j+1)))) {
+						count++;
+					}
+					else if ((isVowel(read.charAt(j)))&&(isConsonant(read.charAt(j+1)))) {
+						count++;
+					}
+					else {
+						j++;
+					}
+				}
+				System.out.println(count);
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	public static boolean isVowel(char ch) {
+		if ((ch == 'a') || (ch == 'e') || (ch == 'i') || (ch == 'o')
+				|| (ch == 'u'))
+			return true;
+		else
+			return false;
+	}
+
+	public static boolean isConsonant(char ch) {
+		String consonant = "bcdfghjklmnpqrstvwxyz";
+		if (consonant.indexOf(ch) == -1) {
+			return false;
+		} else
+			return true;
+	}
+}

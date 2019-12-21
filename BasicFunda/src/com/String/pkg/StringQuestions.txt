@@ -1,0 +1,22 @@
+what is String class in Java?
+is String class type or Data type ?
+why String class is immutable ?
+why string class is final ?
+how many ways to create string class object ?
+Advantage of creating string using string literal ?
+what is string constant pool ?
+Explain some methods in String class ? - 5
+Explain String Buffer and its method.
+Explain about String Builder and its method.
+Difference b/w String Buffer and String Builder
+How to compare String in java
+Difference b/w "==" & .equals method
+where SCP located in memory ?
+explain String intern() method.
+How Substring method works
+is String thread Safe?
+can we use String in Switch Statement ?
+WAP to reverse String ?
+WAP to check String is palindrom?
+WAP to remove duplicate character from String?
+WAP to Sum of digits present in String.
